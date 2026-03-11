@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteBase /
+
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} alfaservicesusa\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://alfaservicesusa.com/$1 [R,L]
